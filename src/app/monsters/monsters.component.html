@@ -1,0 +1,28 @@
+<p>Nos monstres sont la pour vous aider ! <br>
+  Vous souhaitez en savoir plus sur le monde fantastique, <br>
+  profiter de leurs connaissances,<br>
+  ou bien seulement recevoir de l'aide dans l'une de vos tâches ?<br>
+  N'hésitez plus et louez les services de l'un de nos incroyables partenaires !
+</p>
+
+<h1>Nos monstres</h1>
+
+<div>
+  <label for="new-monster">Nom du monstre : </label><br>
+  <input id="new-monster" #monsterName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(monsterName.value); monsterName.value=''" class="add-button">
+    Ajouter le monstre
+  </button>
+</div>
+
+<ul class="monsters">
+    <li *ngFor="let monster of monsters">
+      <a routerLink="/detail/{{monster.id}}">
+      <span class="badge">{{monster.id}}</span> {{monster.name}} 
+      </a>
+      <button class="delete" title="delete monster"
+      (click)="delete(monster)">retirer</button>
+    </li>
+  </ul>

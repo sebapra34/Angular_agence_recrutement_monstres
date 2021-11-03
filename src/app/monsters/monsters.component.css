@@ -1,0 +1,131 @@
+/* monstersComponent's private CSS styles */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+.monsters {
+    margin: 3em 0 2em 40px;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+    
+  }
+  .monsters li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .monsters li:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+    left: .1em;
+  }
+  .monsters li.selected {
+    background-color: black;
+    color: white;
+  }
+  .monsters li.selected:hover {
+    background-color: #505050;
+    color: white;
+  }
+  .monsters li.selected:active {
+    background-color: black;
+    color: white;
+  }
+  .monsters .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  input {
+    margin-left: 40px;
+    padding: .5rem;
+    border-radius: 8px;
+  }
+
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 700;
+    color: #333
+  }
+
+  a:hover{
+    color: rgb(222, 72, 252);
+    transition: 1s
+  }
+
+  .delete {
+    position: relative;
+    text-align: end;
+    color:orange;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .delete:hover {
+    color : #f1f1f1;
+    background-color: #333;
+    transition: 1s;
+  }
+
+  .add-button {
+    background-color: #333;
+    color:rgb(0, 132, 255);
+    font-weight: 700;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  h1 {
+    color: rgb(69, 176, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    padding: 10px;
+    margin: 40px;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: rgba(62, 150, 238, 0.5) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.5) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+
+  label{
+    color: #f1f1f1;
+    font-family: 'Special Elite', cursive;
+    font-weight: 700;
+    margin: 10px;
+    margin-left: 40px;
+  }
+
+  p{
+      color: #f1f1f1;
+      font-family: 'Special Elite', cursive;
+      font-style:oblique;
+      font-weight: 500;
+      margin: 10px;
+      margin-left: 40px;
+      padding-top: 50px;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      line-height: 150%;
+  }
+

@@ -1,0 +1,10 @@
+<div *ngIf="messageService.message.length">
+
+        <hr>
+    <h2>Notifications</h2>
+    <p>Service des monstres : <strong>monstres disponibles !</strong></p>
+    <button class="clear"
+            (click)="messageService.clear()">Effacer les notifications</button>
+    <div class="notif" *ngFor='let message of messageService.message'> {{message}} </div>
+  
+  </div>

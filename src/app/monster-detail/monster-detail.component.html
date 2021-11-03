@@ -1,0 +1,17 @@
+<div *ngIf="monster">
+
+    <div class="wrapper">
+    <h2>Profil du {{monster.name | uppercase}}</h2>
+    <span><img src="{{monster.photo}}" alt="image" class="monster-picture"/></span>
+    <div class="identifiant"><span>Identifiant à communiquer : </span>{{monster.id}}</div>
+    <div>
+      <label for="monster-name">Nom du monstre : </label>
+      <input id="monster-name" [(ngModel)]="monster.name" placeholder="name">
+    <div class="monster-desc"><br>{{monster.desc}}<br><br></div>
+    </div>
+    <button (click)="goBack()">Revenir en arrière</button>
+    <button (click)="save()">Enregistrer / Choisir</button>
+  </div>
+</div>
+
+  

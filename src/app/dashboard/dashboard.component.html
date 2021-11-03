@@ -1,0 +1,10 @@
+<h2>Nos monstres les plus sollicités :</h2>
+<div class="monsters-menu">
+  <a *ngFor="let monster of monsters"
+  routerLink="/detail/{{monster.id}}">
+    {{monster.name}}
+  </a>
+</div>
+
+<app-monster-search></app-monster-search>
+

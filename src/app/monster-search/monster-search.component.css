@@ -1,0 +1,33 @@
+label{
+    color: #f1f1f1;
+    font-family: 'Special Elite', cursive;
+    font-weight: 700;
+    margin: 10px;
+    margin-left: 40px;
+  }
+
+  input {
+    margin-left: 40px;
+    padding: .5rem;
+    border-radius: 8px;
+  }
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(24, 137, 250);
+    transition: 0.5s;
+    margin-left: 40px;
+  }
+
+  a:hover{
+    color: rgb(159, 207, 255);
+    transition: 1s;
+  }
+
+  ul {
+    list-style-type: none;
+  }

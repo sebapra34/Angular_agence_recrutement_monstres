@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+* {
+    text-align: center;
+}
+
+
+hr {
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(174, 216, 245);
+    font-family: 'Architects Daughter', cursive;
+    font-size: 200%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+p{
+    color : #f1f1f1;
+    font-size: 22px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+strong {
+    color: rgb(29, 216, 38);
+    font-weight: 900;
+}
+
+.clear {
+    background-color: #333;
+    color:rgb(69, 176, 248);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+.notif {
+    color : #f1f1f1;
+    font-size: 22px;
+    font-family: 'Architects Daughter', cursive;
+}
