@@ -1,27 +1,17 @@
-# AngularTourOfHeroes
+# Angular Recrutement de monstres
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
+Généré avec la version 12.2.11 de AngularCLI.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Dans le dossier src/app utiliser `ng serve` pour lancer le serveur de développement. Puis se rendre sur `http://localhost:4200/`.
 
-## Code scaffolding
+Utiliser `ng generate component component-name` pour générer de nouveaux composants.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+la route http://localhost:4200/dashboard :
+renvoi à la page d'accueil du site comportant une "mise à la une" de certains monstres, une recherche rapide de monstres via une saisie de caractères, et une zone de notifications fournissant l'historique des recherches et profils consultés.
 
-## Build
+la route http://localhost:4200/monsters :
+renvoi au catalogue de monstres permettant d'ajouter de nouveaux monstres à la liste, d'en retirer de la liste, et de consulter leurs profils.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+la route http://localhost:4200/detail/{id} : 
+renvoi au profil du monstre selectionné permettant d'éditer son nom, de consulter sa description, le choisir et d'enregistrer la modification.
